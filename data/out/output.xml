@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<order>
+  <header>
+    <type>ORDER</type>
+    <no>00001</no>
+    <dateCreated>2018-06-20 15:18:34</dateCreated>
+    <dateSend>2018-06-20 15:20:01</dateSend>
+    <version>1</version>
+  </header>
+  <lines>
+    <line>
+      <line_no>1</line_no>
+      <itemCode>C0001</itemCode>
+      <itemDescription>Karisik Meyveli Kek</itemDescription>
+      <price>1,50</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>BOX</unitOfMeasure>
+      <deliveryDateLatest>20180706 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>2</line_no>
+      <itemCode>C0002</itemCode>
+      <itemDescription>Cikolatali Karamelli Kek</itemDescription>
+      <price>2,00</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>100</orderedQuantity>
+      <unitOfMeasure>BOX</unitOfMeasure>
+      <deliveryDateLatest>20180706 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>4</line_no>
+      <itemCode>C0004</itemCode>
+      <itemDescription>Cilekli Kek</itemDescription>
+      <price>0,50</price>
+      <quantityPerPack>96</quantityPerPack>
+      <orderedQuantity>20</orderedQuantity>
+      <unitOfMeasure>BOX</unitOfMeasure>
+      <deliveryDateLatest>20180713 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>5</line_no>
+      <itemCode>G0001</itemCode>
+      <itemDescription>Gofret</itemDescription>
+      <price>1,50</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>Koli</unitOfMeasure>
+      <deliveryDateLatest>20180720 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>6</line_no>
+      <itemCode>G0002</itemCode>
+      <itemDescription/>
+      <price>1,00</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>Koli</unitOfMeasure>
+      <deliveryDateLatest>20180720 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>7</line_no>
+      <itemCode>G0003</itemCode>
+      <itemDescription>Sutlu Cikolatali Gofret</itemDescription>
+      <price>2</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>Koli</unitOfMeasure>
+      <deliveryDateLatest>20180720 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>8</line_no>
+      <itemCode>G0004</itemCode>
+      <itemDescription>Bitter Cikolatali Gofret</itemDescription>
+      <price>2,50</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>Kol</unitOfMeasure>
+      <deliveryDateLatest>20180720 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>10</line_no>
+      <itemCode>D0001</itemCode>
+      <itemDescription>Portakal Aromali Meyve Suyu 1 Litre</itemDescription>
+      <price>1,50</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>BOX</unitOfMeasure>
+      <deliveryDateLatest>20180727 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>11</line_no>
+      <itemCode>D0002</itemCode>
+      <itemDescription>Seftali Aromali Meyve Suyu  1 Litre</itemDescription>
+      <price>1,50</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>BOX</unitOfMeasure>
+      <deliveryDateLatest>20180727 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>12</line_no>
+      <itemCode>D0003</itemCode>
+      <itemDescription>Limon Aromali Meyve Suyu 1 Litre</itemDescription>
+      <price>1,50</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>BOX</unitOfMeasure>
+      <deliveryDateLatest>20180727 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>13</line_no>
+      <itemCode>D0004</itemCode>
+      <itemDescription>Visne Aromali Meyve Suyu 1 Litre</itemDescription>
+      <price>1,50</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>BOX</unitOfMeasure>
+      <deliveryDateLatest>20180727 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>14</line_no>
+      <itemCode>D0005</itemCode>
+      <itemDescription>Seftali Aromali Soguk Cay 1 Litre</itemDescription>
+      <price>1,50</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>BOX</unitOfMeasure>
+      <deliveryDateLatest>20180727 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>15</line_no>
+      <itemCode>D0006</itemCode>
+      <itemDescription>Limon Aromali Soguk Cay 1 Litre</itemDescription>
+      <price>1,50</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>50</orderedQuantity>
+      <unitOfMeasure>BOX</unitOfMeasure>
+      <deliveryDateLatest>20180727 </deliveryDateLatest>
+    </line>
+    <line>
+      <line_no>16</line_no>
+      <itemCode>D0007</itemCode>
+      <itemDescription>Coca Cola 1,5 Litre</itemDescription>
+      <price>2,00</price>
+      <quantityPerPack>48</quantityPerPack>
+      <orderedQuantity>960</orderedQuantity>
+      <unitOfMeasure>Adet</unitOfMeasure>
+      <deliveryDateLatest>20180718 </deliveryDateLatest>
+    </line>
+  </lines>
+</order>
