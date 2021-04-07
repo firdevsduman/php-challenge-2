@@ -15,7 +15,6 @@ foreach ($filePathList as $filePath) {
     foreach ($fileLines as $i => $line) {
         $fileLines[$i] = explode(';', $line);
 
-        #burda bizden herhangi bir koşul sağlanması istenmediği ve sadece verilerin format değişikliği istendiği için kod düznlendi.
         if ($i === 1) {
             $line = array_combine($fileLines[0], $fileLines[1]);
                 $line['dateCreated'] = DateTime::createFromFormat('YmdHis', $line['dateCreated'])->format(
@@ -29,10 +28,6 @@ foreach ($filePathList as $filePath) {
         }
         if ($i > 2) {
             $line = array_combine($fileLines[2], $fileLines[$i]);
-
-            #burda sadece belirli verilerin boş olup olmadığı denetlendi
-            #aksi durumda hepsini denetlediğimizde csv dosyasında bulunan boş satırları direk sildiği görüldü
-            #Fakat bizden boş olduğu halde silinmesi istenmeyen yerler için kontrol gereksiz bulundu ve düzeltildi.
             if (!empty($line['itemCode'])
                 && !empty($line['price'])
                 && substr_count($line['price'], ',') < 2
