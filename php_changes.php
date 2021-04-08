@@ -18,13 +18,14 @@ foreach ($filePathList as $filePath) {
         #burda bizden herhangi bir koşul sağlanması istenmediği ve sadece verilerin format değişikliği istendiği için kod düznlendi.
         if ($i === 1) {
             $line = array_combine($fileLines[0], $fileLines[1]);
-            $line['dateCreated'] = DateTime::createFromFormat('YmdHis', $line['dateCreated'])->format(
-                'Y-m-d H:i:s'
-            );
-            $line['dateSend'] = DateTime::createFromFormat('YmdHis', $line['dateSend'])->format(
-                'Y-m-d H:i:s'
-            );
-            $xmlArray['order']['header'] = $line;
+                $line['dateCreated'] = DateTime::createFromFormat('YmdHis', $line['dateCreated'])->format(
+                    'Y-m-d H:i:s'
+                );
+                $line['dateSend'] = DateTime::createFromFormat('YmdHis', $line['dateSend'])->format(
+                    'Y-m-d H:i:s'
+                );
+                $xmlArray['order']['header'] = $line;
+
         }
         if ($i > 2) {
             $line = array_combine($fileLines[2], $fileLines[$i]);
@@ -36,9 +37,18 @@ foreach ($filePathList as $filePath) {
                 && !empty($line['price'])
                 && substr_count($line['price'], ',') < 2
                 && 0 !== strpos($line['price'], ',')) {
-                $turkishCharacters=array('ı','İ','ö','Ö','ü','Ü','ç','Ç','ş','Ş','ğ','Ğ');
-                $englishCharacters=array('i','I','o','O','u','U','c','C','s','S','g','G');
-                $line['itemDescription']=str_replace($turkishCharacters,$englishCharacters,$line['itemDescription']);
+                $line['itemDescription'] = str_replace("ı", "i", $line['itemDescription']);
+                $line['itemDescription'] = str_replace('İ', 'I', $line['itemDescription']);
+                $line['itemDescription'] = str_replace('ö', 'o', $line['itemDescription']);
+                $line['itemDescription'] = str_replace('Ö', 'O', $line['itemDescription']);
+                $line['itemDescription'] = str_replace('ü', 'u', $line['itemDescription']);
+                $line['itemDescription'] = str_replace('Ü', 'U', $line['itemDescription']);
+                $line['itemDescription'] = str_replace('ç', 'c', $line['itemDescription']);
+                $line['itemDescription'] = str_replace('Ç', 'C', $line['itemDescription']);
+                $line['itemDescription'] = str_replace('ş', 's', $line['itemDescription']);
+                $line['itemDescription'] = str_replace('Ş', 'S', $line['itemDescription']);
+                $line['itemDescription'] = str_replace('ğ', 'g', $line['itemDescription']);
+                $line['itemDescription'] = str_replace('Ğ', 'G', $line['itemDescription']);
 
                 $line['deliveryDateLatest'] = DateTime::createFromFormat('dMyy', $line['deliveryDateLatest'])->format(
                     'Ymd '
@@ -49,7 +59,7 @@ foreach ($filePathList as $filePath) {
         }
     }
 
-    # xml oluşturuldu
+    # xml i oluştur ve out dizinine bırak
     $xml = new SimpleXMLElement('<order/>');
 
     $header = $xml->addChild('header');
